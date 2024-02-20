@@ -1,7 +1,11 @@
+import Link from 'next/link';
+
 export const Logo = () => {
   return (
     <>
-      <h1>Logo</h1>
+      <Link href="/">
+        <h1>Logo</h1>
+      </Link>
     </>
   );
 };
