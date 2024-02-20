@@ -8,5 +8,9 @@ export const Button = ({ name, href }: { name: string; href: string }) => {
     console.log('ddd');
     router.push(`${href}`);
   };
-  return <button onClick={handleClick}>{name}</button>;
+  return (
+    <button onClick={handleClick} className="rounded bg-orange-950	w-fit p-2">
+      {name}
+    </button>
+  );
 };
