@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Logo } from '../common/Logo';
 import { Button } from '../common/Button';
 import { usePathname } from 'next/navigation';
+import { SignInBtn } from '../auth/SignInBtn';
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -36,7 +37,7 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <Button name="로그인" href="/auth/signin" />
+          <SignInBtn />
         </div>
       </div>
     </>
